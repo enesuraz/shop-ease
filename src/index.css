@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.app {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.sidebar {
+  flex: 0 0 35%;
+  background-color: #9ec1d2;
+  padding: 2.4rem;
+}
+
+.logo {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 6.4rem;
+  font-family: "Shrikhand", serif;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+}
+
+input,
+select {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.6rem;
+  border-radius: 3px;
+}
+
+.form input[type="submit"] {
+  background-color: #122865;
+  color: #f6f9fb;
+  font-size: 1.8rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: #f6f9fb;
+}
+
+.main {
+  flex: 0 0 90%;
+  background-color: #f6f9fb;
+  color: #122865;
+  padding: 4.8rem;
+
+  position: relative;
+}
+
+.item-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  flex-wrap: wrap;
+}
+
+.item-list li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 2.4rem;
+}
+
+.item-btn {
+  border: none;
+  background: none;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+.footer {
+  flex: 1;
+  background-color: #1c1019;
+  padding: 3.2rem 0;
+}
+
+.footer p {
+  text-align: center;
+}
+
+.stats {
+  position: absolute;
+  bottom: 1.6rem;
+  right: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.stats select {
+  background-color: #9ec1d2;
+}
+
+.btn {
+  border: none;
+  background: #122865;
+  padding: 1rem 3rem;
+  color: #f6f9fb;
+  cursor: pointer;
+}
